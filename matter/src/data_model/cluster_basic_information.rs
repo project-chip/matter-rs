@@ -26,11 +26,14 @@ enum Attributes {
     SwVer = 9,
 }
 
+#[derive(Default)]
 pub struct BasicInfoConfig {
     pub vid: u16,
     pub pid: u16,
     pub hw_ver: u16,
     pub sw_ver: u32,
+    /// Device name; up to 32 characters
+    pub device_name: String,
 }
 
 fn attr_vid_new(vid: u16) -> Result<Attribute, Error> {

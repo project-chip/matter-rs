@@ -51,6 +51,7 @@
 //!     pid: 0xFFF1,
 //!     hw_ver: 2,
 //!     sw_ver: 1,
+//!     device_name: "OnOff Light".to_string(),
 //! };
 //!
 //! /// Get the Matter Object
@@ -69,6 +70,7 @@
 
 pub mod acl;
 pub mod cert;
+pub mod codec;
 pub mod core;
 pub mod crypto;
 pub mod data_model;
@@ -77,6 +79,7 @@ pub mod fabric;
 pub mod group_keys;
 pub mod interaction_model;
 pub mod mdns;
+pub mod pairing;
 pub mod secure_channel;
 pub mod sys;
 pub mod tlv;
